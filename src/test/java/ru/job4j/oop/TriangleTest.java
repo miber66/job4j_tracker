@@ -19,12 +19,20 @@ public class TriangleTest {
     }
 
     @Test
-    public void when() {
+    public void when11and00and100Then1() {
         Point a = new Point(1, 1);
         Point b = new Point(0, 0);
         Point c = new Point(100, 100);
         Triangle triangle = new Triangle(a, b, c);
         double rsl = triangle.area();
         assertThat(rsl, closeTo(-1, 0.001));
+    }
+
+    @Test
+    public void when() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(3, 0, 0);
+        double rsl = a.distance3d(b);
+        assertThat(rsl, closeTo(3, 0.001));
     }
 }
