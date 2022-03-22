@@ -19,7 +19,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void when11and00and100Then1() {
+    public void when11and00and100ThenMinus1() {
         Point a = new Point(1, 1);
         Point b = new Point(0, 0);
         Point c = new Point(100, 100);
