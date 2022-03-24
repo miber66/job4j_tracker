@@ -12,5 +12,4 @@ public class HtmlReport extends TextReport {
         String text = report.generate("Report's name", "Report's bode");
         System.out.println(text);
     }
-
 }
