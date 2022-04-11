@@ -11,3 +11,4 @@ public class Train implements Vehicle {
         System.out.println(getClass().getSimpleName() + " Has a diesel engine");
     }
 }
+
