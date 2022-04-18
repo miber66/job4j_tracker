@@ -1,5 +1,6 @@
 package ru.job4j.collection;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,9 +17,6 @@ public class PassportOffice {
     }
 
     public Citizen get(String passport) {
-        for (String key : citizens.keySet()) {
-                return citizens.get(key);
-        }
-        return null;
+        return citizens.get(passport);
     }
 }
