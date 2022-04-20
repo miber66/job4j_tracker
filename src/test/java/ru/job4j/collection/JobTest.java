@@ -70,8 +70,8 @@ public class JobTest {
         Comparator<Job> comparator = new JobAskByName().thenComparing(new JobAskByPriority());
         int rsl = comparator.compare(
                 new Job("Programmer", 0),
-                new Job("Builder", 1)
+                new Job("Programmer", 1)
                 );
-        assertThat(rsl, greaterThan(2));
+        assertThat(rsl, lessThan(0));
     }
 }
