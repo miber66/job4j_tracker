@@ -2,7 +2,15 @@ package ru.job4j.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает пользователя банка
+ * @author MARK KHOKHLYAVIN
+ * @version 1.0
+ */
 public class User {
+    /**
+     * Пасспортные данные и имя пользователя
+     */
     private String passport;
     private String username;
 
