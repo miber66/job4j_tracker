@@ -91,5 +91,4 @@ public class AnalyzeTest {
         );
         assertThat(best, is(new Tuple("Math", 160D)));
     }
-
 }
